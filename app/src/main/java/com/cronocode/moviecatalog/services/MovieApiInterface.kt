@@ -6,6 +6,6 @@ import retrofit2.http.GET
 
 interface MovieApiInterface {
 
-    @GET("/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US&page=1")
+    @GET("3/movie/top_rated?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed&language=en-US&page=1")
     fun getMovieList(): Call<MovieResponse>
 }
